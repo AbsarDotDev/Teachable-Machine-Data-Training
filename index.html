@@ -23,13 +23,21 @@
             margin-top: 20px;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #000; color: #fff;font-family: 'Poppins', sans-serif; display: flex; align-items:center; justify-content: center; height: 100vh;">
+    <div style="background-color: chocolate; padding: 100px;">
     <div style="text-align: center;">
-        <h2>Teachable Machine Image Model with Upload</h2>
+        <h2>Weapons Detection</h2>
+        <p>Note* Model is only trained for detecting knives, pistols and assault rifles only</p>
         <div id="label-container"></div>
-        <img id="imagePreview" />
+        <img id="imagePreview" style=" margin: auto;"/>
         <input id="imageUpload" type="file" />
+    </div>
+
+   
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
